@@ -25,7 +25,7 @@ def index():
         video_clip = mp.VideoFileClip(
             video_stream.url).subclip(start_time, end_time)
 
-        output_video_path = "./temp/" + video_id + "_output_video.mp4"
+        output_video_path = video_id + "_output_video.mp4"
         video_clip.write_videofile(output_video_path)
 
         # print("Recortando o áudio...")
